@@ -1,0 +1,20 @@
+name: habitat
+channels:
+  - conda-forge
+  - aihabitat-nightly
+dependencies:
+  - python=3.9
+  - cmake=3.14.0
+  - habitat-sim
+  - withbullet 
+  - headless
+  - pip
+  - pip:
+    - torchrl==0.5.0
+    - torch==2.4.1
+    - torchvision==0.19.1
+    - torchaudio==2.4.1
+    - robohive==0.7.0
+    - git+https://github.com/facebookresearch/habitat-lab.git#subdirectory=habitat-lab
+    - numpy==1.26.4
+    - av==13.0.0 # Required for torchrl video recorder
