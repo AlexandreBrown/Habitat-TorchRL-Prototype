@@ -12,7 +12,7 @@ micromamba create -f environment.yaml -y
 micromamba activate habitat
 ```
 ```shell
-python -m habitat_sim.utils.datasets_download --uids rearrange_task_assets --data-path data/
+python -m habitat_sim.utils.datasets_download --uids replica_cad --data-path data/
 ```
 ```shell
 python explore_env.py
